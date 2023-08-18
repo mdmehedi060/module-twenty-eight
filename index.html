@@ -28,12 +28,12 @@
   </header>
   <main>
     <!-- main container -->
-    <div class="flex flex-col lg:flex-row mt-12 ml-8">
+    <div class="flex flex-col lg:flex-row mt-12 ml-8 gap-4">
       <!-- shape container -->
       <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <!-- first card -->
         <div class="card w-96 bg-base-100 shadow-xl">
-          <figure><img src="/images/triangle.png" alt="Shoes" /></figure>
+          <figure><img src="./images/triangle.png" alt="Shoes" /></figure>
           <div class="card-body">
             <h2 class="card-title">Triangle</h2>
             <p>Area (A)= 0.5 x b x h</p>
@@ -140,10 +140,10 @@
             <h2 class="card-title">Ellipse</h2>
             <p>Area (A)= π ab</p>
             <p>
-              <input id="ellipse-major-radious" class="border w-24 text-xl px-2 bg-gray-200" type="text"
+              <input id="ellipse-major-radious" class="border w-24 text-xl px-2 bg-gray-200" type="number"
                 placeholder="large">
               <span class="ml-2">cm</span>
-              <input id="ellipse-minor-radious" class="border ml-4 w-24 text-xl px-2 bg-gray-200" type="text"
+              <input id="ellipse-minor-radious" class="border ml-4 w-24 text-xl px-2 bg-gray-200" type="number"
                 placeholder="short">
               <span class="ml-2">cm</span>
             </p>
@@ -157,6 +157,9 @@
       <!-- Area container -->
       <div class="w-[400px]">
         <div class="text-4xl">Area Caculator</div>
+        <div id="calculation-id">
+
+        </div>
       </div>
 
     </div>
